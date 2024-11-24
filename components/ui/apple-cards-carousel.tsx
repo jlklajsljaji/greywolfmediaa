@@ -14,7 +14,9 @@ import {
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import Image, { ImageProps } from "next/image";
-import { useOutsideClick } from "@/hooks/use-outside-click";
+import  useOutsideClick  from "@/hooks/use-outside-click";
+import dynamic from "next/dynamic";
+
 
 interface CarouselProps {
   items: JSX.Element[];
@@ -172,12 +174,12 @@ export const Card = ({
         handleClose();
       }
     }
-    if (typeof window !== "undefined") {
+
     if (open) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "auto";
-    }}
+    }
 
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
