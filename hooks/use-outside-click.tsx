@@ -11,13 +11,16 @@ export const useOutsideClick = (
       }
       callback(event);
     };
+    if (typeof document !== "undefined") {
 
     document.addEventListener("mousedown", listener);
-    document.addEventListener("touchstart", listener);
+    document.addEventListener("touchstart", listener);}
 
     return () => {
+      if (typeof document !== "undefined") {
+
       document.removeEventListener("mousedown", listener);
-      document.removeEventListener("touchstart", listener);
+      document.removeEventListener("touchstart", listener);}
     };
   }, [ref, callback]);
 };
