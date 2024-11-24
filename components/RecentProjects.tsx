@@ -1,7 +1,11 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
+// import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
+import dynamic from "next/dynamic";
+const Carousel = dynamic(() => import("@/components/ui/apple-cards-carousel").then(mod => mod.Carousel), { ssr: false });
+const Card = dynamic(() => import("@/components/ui/apple-cards-carousel").then(mod => mod.Card), { ssr: false });
+
 
 export default function RecentProjects() {
   const cards = data.map((card, index) => (
