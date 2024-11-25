@@ -5,8 +5,8 @@ import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
 
 const Approach = () => {
   return (
-    <section className="w-full py-20" id="projects">
-      <h1 className="heading">
+    <section className="w-full py-20" >
+      <h1 className="heading max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
         Our <span className="text-purple">approach</span>
       </h1>
       {/* remove bg-white dark:bg-black */}

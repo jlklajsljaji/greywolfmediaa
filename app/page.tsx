@@ -10,6 +10,8 @@ import Approach from "@/components/Approach";
 import Experience from "@/components/Experience";
 // import { RecentProjects } from "@/components/RecentProjects";
 import dynamic from "next/dynamic";
+import PricingSection from "@/components/pricing-section";
+
 
 
 
@@ -29,8 +31,8 @@ const  RecentProjects  = dynamic(
 
 const Home = () => {
   return (
-    <main className="relative bg-black-100 flex justify-center w-screen items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
-      <div className="w-screen">
+    <main className="relative bg-black-100 flex overflow-x-hidden justify-center w-screen items-center flex-col  mx-auto sm:px-10 px-5">
+      <div className="w-screen px-7">
        
     
         <Hero />
@@ -39,6 +41,7 @@ const Home = () => {
         <RecentProjects />
         <Clients />
         <Experience />
+        <PricingSection/>
         <Approach />
         <Footer />
       </div>

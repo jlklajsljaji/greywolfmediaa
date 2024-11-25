@@ -11,6 +11,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
+import Image from 'next/image'
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -26,11 +27,13 @@ export function Header() {
 
   return (
     <header className="bg-black/80 backdrop-blur-lg text-white fixed top-0 left-0 right-0 z-50">
-      <div className="container mx-auto px-4 py-6">
+      <div className="container mx-auto px-4 py-5 ">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
      
-            <span className="text-xl font-bold">Grey Wolf Media</span>
+     <Image src={'/logowhite.png'} alt='logo' width={'45'} height={'45'}></Image>
+            <span className="text-xl font-bold font-serif
+">Grey Wolf Media</span>
           </Link>
           <nav className="hidden md:flex space-x-6">
             {menuItems.map((item) => (
@@ -56,7 +59,7 @@ export function Header() {
               <nav className="flex flex-col space-y-4 mt-6">
                 {menuItems.map((item) => (
                   <Link
-                    key={item.href}
+                    key={Math.random()}
                     href={item.href}
                     className="hover:text-gray-300 transition-colors text-lg"
                     onClick={() => setIsOpen(false)}
