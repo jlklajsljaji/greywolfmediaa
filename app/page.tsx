@@ -29,8 +29,8 @@ const  RecentProjects  = dynamic(
 
 const Home = () => {
   return (
-    <main className="relative bg-black-100 flex justify-center w-screen items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
-      <div className="w-screen">
+    <main className="relative bg-black-100 flex justify-center w-screen items-center flex-col  mx-auto sm:px-10 px-5">
+      <div className="w-screen px-7">
        
     
         <Hero />
