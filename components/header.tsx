@@ -12,18 +12,14 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 import Image from 'next/image'
+import { menuItems } from '@/data'
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
   const toggleMenu = () => setIsOpen(!isOpen)
   
-  const menuItems = [
-    { label: "About", href: "#about" },
-    { label: "Projects", href: "#projects" },
-    { label: "Testimonials", href: "#testimonials" },
-    { label: "Contact", href: "#contact" },
-  ]
+  
 
   return (
     <header className="bg-black/80 backdrop-blur-lg text-white fixed top-0 left-0 right-0 z-50">
