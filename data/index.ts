@@ -1,9 +1,101 @@
-export const navItems = [
-  { name: "About", link: "#about" },
-  { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
-  { name: "Contact", link: "#contact" },
+import { HeroProps } from "@/components/Hero";
+
+export const menuItems = [
+  { label: "About", href: "#about" },
+  { label: "Projects", href: "#projects" },
+ 
+  { label: "Contact", href: "#contact" },
+]
+
+
+export const HeroPage: HeroProps = {
+  cover: {
+    title1: "Crafting Modern Architecture",
+    title2: "For A Better Future.",
+    image: "https://plus.unsplash.com/premium_photo-1680806491608-af096f1fc916?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    description: "Professional solutions for unauthorized and long-term parking, ensuring your customers always arrive with ease.",
+    Button: {
+      title: "SCHEDULE A CONSULTATION",
+      onClick: () => { }
+    }
+
+  },
+  Card1: {
+    title: "Sample Title for Card 1",
+    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
+    Button: {
+
+      onClick: () => { }
+    }
+
+  },
+  Card2: {
+    title: "Sample Title for Card 2",
+    image: "https://images.unsplash.com/photo-1451976426598-a7593bd6d0b2?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
+    Button: {
+
+      onClick: () => { }
+    }
+
+  },
+  Card3: {
+    title: "Sample Title for Card 3",
+    image: "https://plus.unsplash.com/premium_photo-1733514691627-e62171fc052c?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+
+    Button: {
+
+      onClick: () => { }
+    }
+
+  }
+}
+
+export const PricingData = [
+  {
+    Title: "Solo",
+Price: "From $29/mo",
+Description : " The ideal plan for larger businesses who require heavy usage.",
+Features : ["Sample 1", "Sample 2"],
+Button: "Text"
+  },
+  {
+    Title: "Solo",
+Price: "From $29/mo",
+Description : " The ideal plan for larger businesses who require heavy usage.",
+Features : ["Sample 1", "Sample 2"],
+Button: "Text"
+  }, {
+    Title: "Solo",
+Price: "From $29/mo",
+Description : " The ideal plan for larger businesses who require heavy usage.",
+Features : ["Sample 1", "Sample 2"],
+Button: "Text"
+  }
+
+]
+export  const footerLinks = [
+  {
+    title: "Product",
+    items: ["Overview", "Features", "Solutions", "Tutorials"],
+  },
+  {
+    title: "Company",
+    items: ["About us", "Careers", "Press", "News"],
+  },
+  {
+    title: "Resource",
+    items: ["Blog", "Newsletter", "Events", "Help center"],
+  },
 ];
+
+export const socialLinks = {
+  facebook:"/",
+  instagram : "/",
+  twitter:"/",
+  
+ }
 
 export const gridItems = [
   {
@@ -35,97 +127,11 @@ export const gridItems = [
     titleClassName: "justify-center",
     img: "",
     spareImg: "",
-  },
-  {
-    id: 4,
-    title: "Our expert team builds cutting-edge websites tailored to your unique goals.",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-    imgClassName: "",
-    titleClassName: "justify-start",
-    img: "/grid.svg",
-    spareImg: "/b4.svg",
-  },
-
-  {
-    id: 6,
-    title: "Do you want to start a project together?",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-    imgClassName: "",
-    titleClassName: "justify-center md:max-w-full max-w-60 text-center",
-    img: "",
-    spareImg: "",
-  },
+  }
 ];
 
-export const projects = [
-  {
-    id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
-  },
-  {
-    id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
-  },
-  {
-    id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
-  },
-  {
-    id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
-  },
-];
 
-export const testimonials = [
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-];
+
 
 export const companies = [
   {
@@ -160,48 +166,5 @@ export const companies = [
   },
 ];
 
-export const workExperience = [
-  {
-    id: 1,
-    title: "Website Development",
-    desc: "We build modern, user-friendly websites that represent your brand and drive results.",
-    className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
-  },
-  {
-    id: 2,
-    title: "Social Media Management",
-    desc: "We grow your online presence with tailored strategies and engaging content.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp2.svg",
-  },
-  {
-    id: 3,
-    title: "Branding",
-    desc: "We create distinctive brand identities that tell your story and leave a lasting impression.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
-  },
-  {
-    id: 4,
-    title: "Analytics",
-    desc: "We provide data-driven insights to refine your approach and achieve sustainable growth.",
-    className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
-  },
-];
 
-export const socialMedia = [
-  {
-    id: 1,
-    img: "/git.svg",
-  },
-  {
-    id: 2,
-    img: "/twit.svg",
-  },
-  {
-    id: 3,
-    img: "/link.svg",
-  },
-];
+

@@ -8,21 +8,21 @@ const Card = dynamic(() => import("@/components/ui/apple-cards-carousel").then(m
 
 
 export default function RecentProjects() {
-  const cards = data.map((card, index) => (
+  const cards = blogdata.map((card, index) => (
     <Card key={card.src} card={card} index={index} />
   ));
 
   return (
     <div className="w-full h-full py-20" id="projects">
       <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
-        Recent Projects
+        Recent Blogs
       </h2>
       <Carousel items={cards} />
     </div>
   );
 }
 
-const DummyContent = () => {
+export const DummyContent = () => {
   return (
     <>
       {[...new Array(3).fill(1)].map((_, index) => {
@@ -54,7 +54,8 @@ const DummyContent = () => {
   );
 };
 
-const data = [
+
+ const blogdata = [
   {
     category: "Artificial Intelligence",
     title: "You can do more with AI.",
